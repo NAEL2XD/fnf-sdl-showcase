@@ -48,7 +48,7 @@ int main(int argc, const char* argv[]) {
 	SDL_Renderer* renderer;
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 	SDL_CreateWindowAndRenderer("FNF' SDL Showcase", 1280, 720, SDL_WINDOW_VULKAN, &window, &renderer);
-	//SDL_SetRenderVSync(renderer, 1);
+	SDL_SetRenderVSync(renderer, 1);
 
 	for (int i = 0; i < 4; i++) {
 		char png[14];
@@ -101,9 +101,6 @@ int main(int argc, const char* argv[]) {
 		std::sort(notes.begin(), notes.end(), [](Note& a, Note& b) {
 			return a.position < b.position; 
 		});
-
-		printf("Starting in 5 seconds.\n");
-		oldTime = SDL_GetTicks();
 
 		char path[256];
 		snprintf(path, 256, "%s/Inst.wav", argv[1]);
