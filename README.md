@@ -1,3 +1,7 @@
+this is meant to be a small ass project. do whatever you want with this, it's small and maybe readable
+
+p.s. DON'T PROFIT THIS GARBAGE
+
 # What's this?
 
 FNF SDL SHOWCASE made in c++ and SDL3
